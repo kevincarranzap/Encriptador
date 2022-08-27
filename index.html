@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <img class="logo" src="imagenes/logo_alura.svg" alt="logo alura">
+        </header>
+
+        <main>
+            
+            <textarea class="entrada" type="text" placeholder="Ingrese el texto aqui" oninput="altura_automatica(this)"></textarea>
+            
+            <p class="alerta">
+                <img src="imagenes/info.svg" alt="signo exclamación">
+                Solo letras minúsculas y sin acentos
+            </p>
+
+            <button class="boton_encriptar" type="button">Encriptar</button>
+            <button class="boton_desencriptar" type="button">Desencriptar</button>
+
+            <div class="contenedor_procesado">
+                <p id="titulo_contenedor_procesado">Ningún mensaje fue encontrado</p>
+                <p id="mensaje_contenedor_procesado">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <p id="texto_procesado"></p>
+                <button id="boton_copiar" type="button">Copiar</button>
+            </div>
+            
+        </main>
+
+        <script src="multilinea.js"></script>
+
+    </body>
+
+</html>

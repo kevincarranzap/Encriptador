@@ -1,0 +1,136 @@
+body{
+    background-color: #F3F5FC;
+}
+
+.logo{
+    margin-top: 24px;
+    margin-left: 16px;
+    width: 32px;
+}
+
+.entrada{
+    width: calc(100%-32px);
+    height: 235px;
+    margin-top: 80px;
+    padding: 0 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+
+    background-color: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.entrada::placeholder{
+    color: #0A3871;
+}
+
+.entrada:focus{
+    outline: none;
+}
+
+.alerta img{
+    width: 16px;
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
+.alerta{
+    margin-top: 64px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #67808E;
+
+    display: flex;
+    align-items: center;
+}
+
+.boton_encriptar, .boton_desencriptar, #boton_copiar{
+    display: block;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 343px;
+    height: 67px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    border: none;
+    border-radius: 24px;
+}
+
+.boton_encriptar{
+    background-color: #0A3871;
+    color: white;
+}
+
+.boton_desencriptar, #boton_copiar{
+    background-color: transparent;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.contenedor_procesado{
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px;
+    width: 327px;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.contenedor_procesado p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+}
+
+#titulo_contenedor_procesado{
+    display: inline;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+}
+
+#mensaje_contenedor_procesado{
+    display: inline;
+}
+
+#texto_procesado{
+    text-align: left;
+    font-size: 24px;
+}
+
+#boton_copiar{
+    display: none;
+    width: 279px;
+    margin: 0;
+}
