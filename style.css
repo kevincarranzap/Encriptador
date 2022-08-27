@@ -8,7 +8,7 @@ body{
     width: 32px;
 }
 
-.entrada{
+#entrada{
     width: calc(100%-32px);
     height: 235px;
     margin-top: 80px;
@@ -27,11 +27,11 @@ body{
     outline: none;
 }
 
-.entrada::placeholder{
+#entrada::placeholder{
     color: #0A3871;
 }
 
-.entrada:focus{
+#entrada:focus{
     outline: none;
 }
 
