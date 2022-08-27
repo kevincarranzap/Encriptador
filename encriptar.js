@@ -4,7 +4,7 @@ botonEncriptar.addEventListener("click", function(){
     var textoIngresado = entradaTexto.value;
     var textoEncriptado = "";
 
-    for(var i=0 ; i < textoIngresado.length ; i++){
+    for(var i = 0; i < textoIngresado.length; i++){
         if(textoIngresado[i]=='e'){
             textoEncriptado = textoEncriptado.concat("enter");
         }else if(textoIngresado[i]=='i'){
@@ -20,11 +20,15 @@ botonEncriptar.addEventListener("click", function(){
         }
     }
 
+    document.querySelector("#texto_procesado").textContent = textoEncriptado;
+    mostrarTextoProcesado();
+})
+
+function mostrarTextoProcesado(){
     document.querySelector("#titulo_contenedor_procesado").style.display = "none";
     document.querySelector("#mensaje_contenedor_procesado").style.display = "none";
     document.querySelector("#texto_procesado").style.display = "inline";
     document.querySelector("#boton_copiar").style.display = "inline";
     document.querySelector(".contenedor_procesado").style.width = "343px";
     document.querySelector(".contenedor_procesado").style.gap = "32px";
-    document.querySelector("#texto_procesado").textContent = textoEncriptado;
-})
+}
