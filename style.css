@@ -9,7 +9,7 @@ body{
 }
 
 #entrada{
-    width: calc(100%-32px);
+    width: 343px;
     height: 235px;
     margin-top: 80px;
     padding: 0 16px;
