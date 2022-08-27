@@ -126,6 +126,7 @@ body{
 
 #texto_procesado{
     display: none;
+    word-wrap: break-word;
     text-align: left;
     font-size: 24px;
 }
