@@ -12,5 +12,10 @@ entradaTexto.addEventListener("input", function(){
         document.querySelector("#boton_copiar").style.display = "none";
         document.querySelector(".contenedor_procesado").style.width = "327px";
         document.querySelector(".contenedor_procesado").style.gap = "16px";
+        document.querySelector(".contenedor_procesado").style.marginBottom = "24px";
+        document.querySelector(".alerta").style.color = "#67808E";
+        document.querySelector(".alerta svg path").style.fill = "#67808E";
+    }else{
+        verificarCondiciones();
     }
 })
