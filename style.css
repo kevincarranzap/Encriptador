@@ -96,7 +96,7 @@ body{
     border: 1px solid #0A3871;
 }
 
-.contenedor_procesado{
+.resultado_no_procesado, .resultado_procesado{
     box-sizing: border-box;
     display: flex;
     margin-top: 64px;
@@ -115,7 +115,13 @@ body{
     border-radius: 32px;
 }
 
-.contenedor_procesado p{
+.resultado_procesado{
+    margin-bottom: 24px;
+    width: 343px;
+    gap: 32px;
+}
+
+.resultado_no_procesado p, .resultado_procesado p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -125,7 +131,6 @@ body{
 }
 
 #titulo_contenedor_procesado{
-    display: inline;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -182,8 +187,12 @@ body{
         margin: 0 40px;
     }
 
-    .contenedor_procesado{
+    .resultado_no_procesado, .resultado_procesado{
         width: 688px;
+    }
+
+    .resultado_procesado{
+        margin-bottom: 40px;
     }
     
     #boton_copiar{

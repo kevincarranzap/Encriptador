@@ -25,13 +25,10 @@ botonEncriptar.addEventListener("click", function(){
 })
 
 function mostrarTextoProcesado(){
+    document.querySelector("#contenedor_resultado").classList.remove("resultado_no_procesado");
+    document.querySelector("#contenedor_resultado").classList.add("resultado_procesado");
     document.querySelector("#titulo_contenedor_procesado").style.display = "none";
     document.querySelector("#mensaje_contenedor_procesado").style.display = "none";
     document.querySelector("#texto_procesado").style.display = "inline";
     document.querySelector("#boton_copiar").style.display = "inline";
-    document.querySelector(".contenedor_procesado").style.gap = "32px";
-    if (screen.width < 600){
-        document.querySelector(".contenedor_procesado").style.marginBottom = "24px";
-        document.querySelector(".contenedor_procesado").style.width = "343px";
-    }
 }
