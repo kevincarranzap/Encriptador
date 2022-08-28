@@ -29,6 +29,9 @@ function mostrarTextoProcesado(){
     document.querySelector("#mensaje_contenedor_procesado").style.display = "none";
     document.querySelector("#texto_procesado").style.display = "inline";
     document.querySelector("#boton_copiar").style.display = "inline";
-    document.querySelector(".contenedor_procesado").style.width = "343px";
     document.querySelector(".contenedor_procesado").style.gap = "32px";
+    if (screen.width < 600){
+        document.querySelector(".contenedor_procesado").style.marginBottom = "24px";
+        document.querySelector(".contenedor_procesado").style.width = "343px";
+    }
 }
