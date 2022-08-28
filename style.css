@@ -18,7 +18,7 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 150%;
+    line-height: 48px;
     color: #0A3871;
 
     background-color: transparent;
@@ -35,24 +35,36 @@ body{
     outline: none;
 }
 
-.alerta svg{
+.alerta_gris svg, .alerta_roja svg{
     width: 16px;
     margin-left: 16px;
     margin-right: 8px;
 }
 
-.alerta{
+.alerta_gris svg path{
+    fill: #67808E;
+}
+
+.alerta_gris, .alerta_roja{
     margin-top: 64px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 150%;
+    line-height: 18px;
     color: #67808E;
 
     display: flex;
     align-items: center;
+}
+
+.alerta_roja svg path{
+    fill: #dc1515;
+}
+
+.alerta_roja{
+    color: #dc1515;
 }
 
 .boton_encriptar, .boton_desencriptar, #boton_copiar{
@@ -108,7 +120,7 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 24px;
     color: #495057;
 }
 
@@ -116,12 +128,8 @@ body{
     display: inline;
     font-weight: 700;
     font-size: 24px;
-    line-height: 120%;
+    line-height: 29px;
     color: #343A40;
-}
-
-#mensaje_contenedor_procesado{
-    display: inline;
 }
 
 #texto_procesado{
@@ -135,4 +143,50 @@ body{
     display: none;
     width: 279px;
     margin: 0;
+}
+
+@media screen and (min-width:600px){
+    .logo{
+        margin-top: 73.42px;
+        margin-left: 40px;
+        width: 31.09px;
+    }
+
+    #entrada{
+        width: 688px;
+        height: 475.79px;
+        margin-top: 120.21px;
+        padding: 0 40px;
+    }
+
+    .alerta_gris svg, .alerta_roja svg{
+        margin-left: 40px;
+    }
+    
+    .alerta_gris, .alerta_roja{
+        margin-top: 120.21px;
+    }
+    
+    .alerta_gris{
+        color: #495057;
+    }
+
+    .boton_encriptar, .boton_desencriptar, #boton_copiar{
+        margin-top: 16px;
+        width: 332px;
+    }
+
+    .botones_principales{
+        display: inline-flex;
+        gap: 24px;
+        margin: 0 40px;
+    }
+
+    .contenedor_procesado{
+        width: 688px;
+    }
+    
+    #boton_copiar{
+        width: 624px;
+    }
 }
