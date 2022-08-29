@@ -8,7 +8,7 @@ body{
     width: 8.53vw;/*32px*/
 }
 
-#entrada{
+.entrada{
     width: 91.47vw;/*343px*/
     height: 62.67vw;/*235px*/
     margin-top: 21.33vw;/*80px*/
@@ -27,11 +27,11 @@ body{
     outline: none;
 }
 
-#entrada::placeholder{
+.entrada::placeholder{
     color: #0A3871;
 }
 
-#entrada:focus{
+.entrada:focus{
     outline: none;
 }
 
@@ -67,7 +67,7 @@ body{
     color: #dc1515;
 }
 
-.boton_encriptar, .boton_desencriptar, #boton_copiar{
+.boton_encriptar, .boton_desencriptar, .boton_copiar{
     display: block;
     margin-top: 4.27vw;/*16px*/
     margin-left: auto;
@@ -90,7 +90,7 @@ body{
     color: white;
 }
 
-.boton_desencriptar, #boton_copiar{
+.boton_desencriptar, .boton_copiar{
     background-color: transparent;
     color: #0A3871;
     border: 1px solid #0A3871;
@@ -121,7 +121,7 @@ body{
     gap: 8.53vw;/*32px*/
 }
 
-.resultado_no_procesado p, .resultado_procesado p{
+.titulo_contenedor_procesado, .mensaje_contenedor_procesado, .texto_procesado{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -134,21 +134,21 @@ body{
     display: none;
 }
 
-#titulo_contenedor_procesado{
+.titulo_contenedor_procesado{
     font-weight: 700;
     font-size: 6.4vw;/*24px*/
     line-height: 120%;
     color: #343A40;
 }
 
-#texto_procesado{
+.texto_procesado{
     display: none;
     word-wrap: break-word;
     text-align: left;
     font-size: 6.4vw;/*24px*/
 }
 
-#boton_copiar{
+.boton_copiar{
     display: none;
     width: 74.4vw;/*279px*/
     margin: 0;
@@ -161,7 +161,7 @@ body{
         width: 4.05vw;/*31.09px*/
     }
 
-    #entrada{
+    .entrada{
         width: 89.58vw;/*688px*/
         height: 61.95vw;/*475.79px*/
         margin-top: 15.65vw;/*120.21px*/
@@ -184,7 +184,7 @@ body{
         color: #495057;
     }
 
-    .boton_encriptar, .boton_desencriptar, #boton_copiar{
+    .boton_encriptar, .boton_desencriptar, .boton_copiar{
         margin-top: 2.08vw;/*16px*/
         width: 43.23vw;/*332px*/
         height: 8.72vw;/*67px*/
@@ -209,19 +209,19 @@ body{
         border-radius: 4.17vw;/*32px*/
     }
     
-    .resultado_no_procesado p, .resultado_procesado p{
+    .titulo_contenedor_procesado, .mensaje_contenedor_procesado, .texto_procesado{
         font-size: 2.08vw;/*16px*/
     }
 
-    #titulo_contenedor_procesado{
+    .titulo_contenedor_procesado{
         font-size: 3.13vw;/*24px*/
     }
 
-    #texto_procesado{
+    .texto_procesado{
         font-size: 3.13vw;/*24px*/
     }
 
-    #boton_copiar{
+    .boton_copiar{
         width: 81.25vw;/*624px*/
     }
 }
@@ -233,7 +233,7 @@ body{
         width: 2.16vw;/*31.09px*/
     }
 
-    #entrada{
+    .entrada{
         width: 40.07vw;/*577px*/
         height: 41.88vw;/*603px*/
         padding: 0;
@@ -286,7 +286,7 @@ body{
         gap: 1.11vw;/*16px*/
     }
 
-    .resultado_no_procesado p, .resultado_procesado p{
+    .titulo_contenedor_procesado, .mensaje_contenedor_procesado, .texto_procesado{
         font-size: 1.11vw;/*16px*/
     }
 
@@ -297,18 +297,18 @@ body{
         margin-bottom: 1.11vw;/*16px*/
     }
 
-    #titulo_contenedor_procesado{
+    .titulo_contenedor_procesado{
         font-size: 1.67vw;/*24px*/
     }
 
-    #texto_procesado{
+    .texto_procesado{
         font-size: 1.67vw;/*24px*/
         height: 54.24vw;/*781px*/
         width: 23.33vw;/*336px*/
         overflow-y: auto;
     }
 
-    #boton_copiar{
+    .boton_copiar{
         margin-top: 1.11vw;/*16px*/
         width: 23.33vw;/*336px*/
         height: 4.65vw;/*67px*/

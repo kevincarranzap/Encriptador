@@ -1,4 +1,4 @@
-var entradaTexto = document.querySelector("#entrada");
+var entradaTexto = document.querySelector(".entrada");
 
 entradaTexto.addEventListener("keydown", ({ key }) => {
     if(["Backspace", "Delete"].includes(key)){
@@ -17,13 +17,13 @@ entradaTexto.addEventListener("input", function(){
         document.querySelector("#contenedor_resultado").classList.remove("resultado_procesado");
         document.querySelector("#contenedor_resultado").classList.add("resultado_no_procesado");
         document.querySelector(".munheco").style.display = "";
-        document.querySelector("#titulo_contenedor_procesado").style.display = "";
-        document.querySelector("#mensaje_contenedor_procesado").style.display = "";
-        document.querySelector("#texto_procesado").style.display = "";
-        document.querySelector("#boton_copiar").style.display = "";
+        document.querySelector(".titulo_contenedor_procesado").style.display = "";
+        document.querySelector(".mensaje_contenedor_procesado").style.display = "";
+        document.querySelector(".texto_procesado").style.display = "";
+        document.querySelector(".boton_copiar").style.display = "";
         document.querySelector("#alerta").classList.remove("alerta_roja");
         document.querySelector("#alerta").classList.add("alerta_gris");
-        document.querySelector("#entrada").style.height = "";
+        document.querySelector(".entrada").style.height = "";
     }else{
         verificarCondiciones();
     }

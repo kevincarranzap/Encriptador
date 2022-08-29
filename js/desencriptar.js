@@ -8,7 +8,7 @@ botonDesencriptar.addEventListener("click", function(){
         textoDesencriptado = reemplazarClave(claves[i][0], claves[i][1], textoDesencriptado);
     }
 
-    document.querySelector("#texto_procesado").textContent = textoDesencriptado;
+    document.querySelector(".texto_procesado").textContent = textoDesencriptado;
     mostrarTextoProcesado();
 })
 
