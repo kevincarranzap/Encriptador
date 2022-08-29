@@ -22,6 +22,7 @@ botonEncriptar.addEventListener("click", function(){
 
     document.querySelector(".texto_procesado").textContent = textoEncriptado;
     mostrarTextoProcesado();
+    entradaTexto.value = "";
 })
 
 function mostrarTextoProcesado(){
