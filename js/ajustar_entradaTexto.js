@@ -16,6 +16,7 @@ entradaTexto.addEventListener("input", function(){
     if(entradaTexto.value == ""){
         document.querySelector("#contenedor_resultado").classList.remove("resultado_procesado");
         document.querySelector("#contenedor_resultado").classList.add("resultado_no_procesado");
+        document.querySelector(".munheco").style.display = "";
         document.querySelector("#titulo_contenedor_procesado").style.display = "";
         document.querySelector("#mensaje_contenedor_procesado").style.display = "";
         document.querySelector("#texto_procesado").style.display = "";

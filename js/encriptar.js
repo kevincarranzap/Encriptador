@@ -27,6 +27,7 @@ botonEncriptar.addEventListener("click", function(){
 function mostrarTextoProcesado(){
     document.querySelector("#contenedor_resultado").classList.remove("resultado_no_procesado");
     document.querySelector("#contenedor_resultado").classList.add("resultado_procesado");
+    document.querySelector(".munheco").style.display = "none";
     document.querySelector("#titulo_contenedor_procesado").style.display = "none";
     document.querySelector("#mensaje_contenedor_procesado").style.display = "none";
     document.querySelector("#texto_procesado").style.display = "inline";
